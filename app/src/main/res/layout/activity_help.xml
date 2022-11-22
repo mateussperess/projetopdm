@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".Help">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="457dp"
+        android:layout_height="754dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47"
+        app:srcCompat="@drawable/bghelp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/josefin_sans"
+        android:text="COMO PODEMOS AJUDAR?"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="284dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="160dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            app:srcCompat="@drawable/imghelp" />
+
+        <EditText
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/josefin_sans"
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textColor="@color/white"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:fontFamily="@font/josefin_sans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição: "
+            android:textColor="@color/white"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/buttonSendHelp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="ENVIAR"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:fontFamily="@font/josefin_sans"
+            android:background="#00FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="60dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_copyright" />
+
+        <Button
+            android:id="@+id/buttonHelp"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:fontFamily="@font/josefin_sans"
+            android:text="VOLTAR"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="7dp"
+            app:cardCornerRadius="100dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/littlelogo" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
