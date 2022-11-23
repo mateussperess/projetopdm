@@ -4,38 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    android:background="#08FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:focusable="auto"
+    tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="430dp"
-        android:layout_height="752dp"
+        android:id="@+id/imageView"
+        android:layout_width="416dp"
+        android:layout_height="732dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bglogin" />
+        app:srcCompat="@drawable/bgregister" />
 
-    <Button
-        android:id="@+id/buttonHelp2"
-        android:layout_width="130dp"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:backgroundTint="#00FFFFFF"
-        android:fontFamily="@font/josefin_sans"
-        android:text="ENTRAR"
-        android:textSize="22dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout9"
-        app:layout_constraintVertical_bias="0.57"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoregister" />
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/linearLayout4"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:orientation="horizontal"
@@ -60,10 +56,9 @@
             android:layout_weight="1"
             android:backgroundTint="#00FFFFFF"
             android:fontFamily="@font/josefin_sans"
-            android:text="VOLTAR"
+            android:text="PRECISA DE AJUDA?"
             android:textSize="16dp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="25dp"
@@ -81,58 +76,88 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout9"
-        android:layout_width="300dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="52dp"
+        android:id="@+id/linearLayout6"
+        android:layout_width="406dp"
+        android:layout_height="350dp"
         android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView">
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.373">
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress2"
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:fontFamily="@font/josefin_sans"
+            android:inputType="textPersonName"
+            android:hint="Nome completo: "
+            android:textColorHint="@color/white"
+            />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:fontFamily="@font/josefin_sans"
-            android:hint="Email: "
             android:inputType="textEmailAddress"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:hint="Email: "
+            android:textColorHint="@color/white"
+            android:textColor="@color/white" />
 
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:fontFamily="@font/josefin_sans"
-            android:hint="Senha: "
             android:inputType="textPassword"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:hint="Senha: "
+            android:textColorHint="@color/white"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:fontFamily="@font/josefin_sans"
+            android:inputType="textPassword"
+            android:hint="Confirme a sua senha:"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white" />
+
+
     </LinearLayout>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="100dp"
-        app:cardCornerRadius="100dp"
+    <Button
+        android:id="@+id/buttonSendHelp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/josefin_sans"
+        android:text="REGISTRAR"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
 
-        <ImageView
-            android:id="@+id/imageView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/littlelogo" />
-    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
