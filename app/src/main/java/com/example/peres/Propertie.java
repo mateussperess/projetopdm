@@ -1,12 +1,12 @@
 package com.example.peres;
 
 public class Propertie {
-     String title;
-     float price;
-     String image;
-     String description;
-     float idCategory;
-     String message;
+    private String title;
+    private float price;
+    private String image;
+    private String description;
+    private float idCategory;
+    private String message;
 
     public Propertie(String title, float price, String image, String description, float idCategory, String message) {
         this.title = title;
@@ -33,7 +33,7 @@ public class Propertie {
         this.price = price;
     }
 
-    public String getImage() {
+    public int getImage() {
         return image;
     }
 

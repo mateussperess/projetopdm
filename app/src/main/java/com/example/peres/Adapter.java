@@ -1,9 +1,12 @@
 package com.example.peres;
 
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -16,64 +19,44 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         this.properties = properties;
     }
 
+
+
     public static class ViewHolder extends  RecyclerView.ViewHolder {
         final TextView title;
         final TextView price;
         final ImageView image;
         final TextView description;
-        final TextView idCategory;
-        final TextView message;
+//        final TextView idCategory;
+//        final TextView message;
 
         public ViewHolder(View view) {
-            super();
-            this.title = title;
-            this.price = price;
-            this.image = image;
-            this.description = description;
-            this.idCategory = idCategory;
-            this.message = message;
-        }
+            super(view);
+            title = (TextView) view.findViewById(R.id.txtTitle);
+            price = (TextView) view.findViewById(R.id.floatPrice);
+            image = (ImageView) view.findViewById(R.id.imgPropertie);
+            description = (TextView) view.findViewById(R.id.txtDescription);
 
-//        public ViewHolder(String title, float price, String image, String description, float idCategory, String message) {
-//            this.title = title;
-//            this.price = price;
-//            this.image = image;
-//            this.description = description;
-//            this.idCategory = idCategory;
-//            this.message = message;
-//        }
+//            Atributos do item que vai ser inserido
+//            idCategory = (TextView) view.findViewById(R.id.);
+//            message = (TextView) view.findViewById(R.id.);
+        }
     }
-//
-//    public static class ViewHolder extends RecyclerView.ViewHolder {
-//        final TextView txtNome;
-//        final TextView txtFone;
-//        final ImageView ivFoto;
-//
-//        public ViewHolder(View view) {
-//            super(view);
-//            txtNome = (TextView) view.findViewById(R.id.txtNome);
-//            txtFone = (TextView) view.findViewById(R.id.txtFone);
-//            ivFoto = (ImageView) view.findViewById(R.id.ivFoto);
-//        }
-//    }
-//    @NonNull
-//    @Override
-//    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-//        View view = LayoutInflater.from(parent.getContext())
-//                .inflate(R.layout.item_contato, parent, false);
-//        return new ViewHolder(view);
-//    }
-//
-//    @Override
-//    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-//        Contato contato = contatos.get(position);
-//        holder.txtNome.setText(contato.nome);
-//        holder.txtFone.setText(contato.telefone);
-//        holder.ivFoto.setImageResource(contato.foto);
-//    }
-//
-//    @Override
-//    public int getItemCount() {
-//        return contatos.size();
-//    }
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.propertie, parent, false);
+    }
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        Propertie propertie = properties.get(position);
+        holder.title.setText(propertie.getTitle());
+        holder.price.setText((int) propertie.getPrice());
+        holder.image.setImageResource(propertie.getImage());
+        holder.description.setText(propertie.getDescription());
+    }
+    @Override
+    public int getItemCount() {
+        return properties.size();
+    }
 }
