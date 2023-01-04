@@ -24,7 +24,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     public static class ViewHolder extends  RecyclerView.ViewHolder {
         final TextView title;
         final TextView price;
-        final ImageView image;
+//        final ImageView image;
         final TextView description;
 //        final TextView idCategory;
 //        final TextView message;
@@ -33,7 +33,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             super(view);
             title = (TextView) view.findViewById(R.id.txtTitle);
             price = (TextView) view.findViewById(R.id.floatPrice);
-            image = (ImageView) view.findViewById(R.id.imgPropertie);
+//            image = (ImageView) view.findViewById(R.id.imgPropertie);
             description = (TextView) view.findViewById(R.id.txtDescription);
 
 //            Atributos do item que vai ser inserido
@@ -46,13 +46,15 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.propertie, parent, false);
+        return new ViewHolder(view);
     }
+
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Propertie propertie = properties.get(position);
         holder.title.setText(propertie.getTitle());
         holder.price.setText((int) propertie.getPrice());
-        holder.image.setImageResource(propertie.getImage());
+//        holder.image.setImageResource(propertie.getImage());
         holder.description.setText(propertie.getDescription());
     }
     @Override

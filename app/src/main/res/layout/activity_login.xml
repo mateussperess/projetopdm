@@ -61,6 +61,7 @@
             android:backgroundTint="#00FFFFFF"
             android:fontFamily="@font/josefin_sans"
             android:text="VOLTAR"
+            android:onClick="launchMainActivity"
             android:textSize="16dp"
             android:textStyle="bold"
             />

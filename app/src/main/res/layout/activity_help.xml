@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/josefin_sans"
         android:text="COMO PODEMOS AJUDAR?"
+        android:onClick="launchMainActivity"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -114,6 +115,7 @@
             android:backgroundTint="#00FFFFFF"
             android:fontFamily="@font/josefin_sans"
             android:text="VOLTAR"
+            android:onClick="launchMainActivity"
             android:textSize="16dp"
             android:textStyle="bold" />
 

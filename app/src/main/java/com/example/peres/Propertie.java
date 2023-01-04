@@ -3,15 +3,15 @@ package com.example.peres;
 public class Propertie {
     private String title;
     private float price;
-    private String image;
+//    private String image;
     private String description;
     private float idCategory;
     private String message;
 
-    public Propertie(String title, float price, String image, String description, float idCategory, String message) {
+    public Propertie(String title, float price, String description, float idCategory, String message) {
         this.title = title;
         this.price = price;
-        this.image = image;
+//        this.image = image;
         this.description = description;
         this.idCategory = idCategory;
         this.message = message;
@@ -33,13 +33,13 @@ public class Propertie {
         this.price = price;
     }
 
-    public int getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
+//    public String getImage() {
+//        return image;
+//    }
+//
+//    public void setImage(String image) {
+//        this.image = image;
+//    }
 
     public String getDescription() {
         return description;
