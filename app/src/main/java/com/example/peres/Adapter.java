@@ -20,7 +20,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     }
 
 
-
     public static class ViewHolder extends  RecyclerView.ViewHolder {
         final TextView title;
         final TextView price;

@@ -5,16 +5,21 @@ public class Propertie {
     private float price;
 //    private String image;
     private String description;
-    private float idCategory;
-    private String message;
+//    private float idCategory;
+//    private String message;
 
-    public Propertie(String title, float price, String description, float idCategory, String message) {
+    public Propertie(
+        String title,
+        float price,
+        String description
+    )
+    {
         this.title = title;
         this.price = price;
 //        this.image = image;
         this.description = description;
-        this.idCategory = idCategory;
-        this.message = message;
+//        this.idCategory = idCategory;
+//        this.message = message;
     }
 
     public String getTitle() {

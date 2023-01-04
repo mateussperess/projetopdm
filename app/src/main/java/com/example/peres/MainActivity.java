@@ -1,6 +1,7 @@
 package com.example.peres;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +9,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
-//    Button buttonLogin = findViewById(R.id.buttonLogin);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
