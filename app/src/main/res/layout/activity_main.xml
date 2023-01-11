@@ -37,14 +37,16 @@
             android:layout_weight="1"
             android:background="#00FFFFFF"
             android:fontFamily="@font/josefin_sans"
-            android:text="FAZER LOGIN"
             android:onClick="launchLoginActivity"
+            android:text="FAZER LOGIN"
             android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
             android:typeface="sans" />
-
-
 
 
         <Button
@@ -54,8 +56,13 @@
             android:layout_weight="1"
             android:backgroundTint="#00FFFFFF"
             android:fontFamily="@font/josefin_sans"
-            android:text="CRIAR CONTA"
             android:onClick="launchRegisterActivity"
+            android:shadowColor="@color/white"
+            android:text="CRIAR CONTA"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -79,11 +86,15 @@
             android:layout_marginBottom="5dp"
             android:fontFamily="@font/josefin_sans"
             android:lineSpacingExtra="8sp"
+            android:shadowColor="@color/white"
             android:text="PERES"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
             android:textSize="32dp"
             android:textStyle="bold"
             android:typeface="sans" />
@@ -108,11 +119,15 @@
             android:layout_marginTop="5dp"
             android:fontFamily="@font/josefin_sans"
             android:lineSpacingExtra="8sp"
+            android:shadowColor="@color/white"
             android:text="IMÓVEIS"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
             android:textSize="32dp"
             android:textStyle="bold"
             android:typeface="sans" />
@@ -140,14 +155,19 @@
 
         <Button
             android:id="@+id/buttonHelp"
-            android:layout_marginTop="40dp"
             android:layout_width="127dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
             android:layout_weight="1"
             android:backgroundTint="#00FFFFFF"
             android:fontFamily="@font/josefin_sans"
-            android:text="PRECISA DE AJUDA?"
             android:onClick="launchHelpActivity"
+            android:shadowColor="@color/white"
+            android:text="PRECISA DE AJUDA?"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorHint="@color/white"
+            android:textColorLink="@color/white"
             android:textSize="16dp"
             android:textStyle="bold" />
 

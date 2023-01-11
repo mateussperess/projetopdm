@@ -22,6 +22,8 @@ public class Propertie {
 //        this.message = message;
     }
 
+
+
     public String getTitle() {
         return title;
     }
@@ -54,19 +56,19 @@ public class Propertie {
         this.description = description;
     }
 
-    public float getIdCategory() {
-        return idCategory;
-    }
+//    public float getIdCategory() {
+//        return idCategory;
+//    }
 
-    public void setIdCategory(float idCategory) {
-        this.idCategory = idCategory;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
+//    public void setIdCategory(float idCategory) {
+//        this.idCategory = idCategory;
+//    }
+//
+//    public String getMessage() {
+//        return message;
+//    }
+//
+//    public void setMessage(String message) {
+//        this.message = message;
+//    }
 }

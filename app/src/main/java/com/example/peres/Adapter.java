@@ -52,7 +52,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Propertie propertie = properties.get(position);
         holder.title.setText(propertie.getTitle());
-        holder.price.setText((int) propertie.getPrice());
+        holder.price.setText(""+ propertie.getPrice());
 //        holder.image.setImageResource(propertie.getImage());
         holder.description.setText(propertie.getDescription());
     }
